@@ -58,7 +58,7 @@ export const signup = async (req, res) => {
         id: newUser._id,
         username: newUser.username,
         email: newUser.email,
-      }, `User Regestered`);
+      });
     } else {
       res.status(400).json({ message: "Invalid User Data" });
     }
